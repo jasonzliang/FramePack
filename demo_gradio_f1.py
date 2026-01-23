@@ -421,7 +421,7 @@ with block:
 
         with gr.Column():
             preview_image = gr.Image(label="Next Latents", height=200, visible=False)
-            result_video = gr.Video(label="Finished Frames", autoplay=True, show_share_button=False, height=512, loop=True)
+            result_video = gr.Video(label="Finished Frames", autoplay=True, height=512, loop=True)
             progress_desc = gr.Markdown('', elem_classes='no-generating-animation')
             progress_bar = gr.HTML('', elem_classes='no-generating-animation')
 
