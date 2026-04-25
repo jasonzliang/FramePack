@@ -49,7 +49,7 @@ except:
     flash_attn_func = None
 
 try:
-    # raise NotImplementedError
+    raise NotImplementedError  # disabled: prefer flash-attn 2.x on Ada Lovelace (RTX 4090)
     from sageattention import sageattn_varlen, sageattn
     print('Sage Attn is installed!')
 except:
