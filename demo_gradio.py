@@ -4,6 +4,7 @@ import os
 
 os.environ['HF_HOME'] = os.path.abspath(os.path.realpath(os.path.join(os.path.dirname(__file__), './hf_download')))
 os.environ["PYTORCH_ENABLE_MPS_FALLBACK"] = "1"
+os.environ["HF_HUB_DOWNLOAD_TIMEOUT"] = "60"  # 60 second timeout for downloads
 
 import gradio as gr
 import torch
